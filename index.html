@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burger House</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2 class="logo">BURGER HOUSE 🍔</h2>
+
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <a href="#cart" class="cart-btn">
+    🛒 السلة <span id="cart-count">0</span>
+</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+    <div class="hero-text">
+
+        <p class="small-title">أهلاً بكم في</p>
+
+        <h1>
+            أفضل برغر<br>
+            في بغداد 🍔
+        </h1>
+
+        <p>
+            طعم لا يُنسى، مكونات طازجة،
+            وتجربة تستحق التكرار.
+        </p>
+
+        <a href="#menu" class="hero-btn">
+            المنيو 🍔
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img 
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+            alt="Delicious Burger"
+        >
+
+    </div>
+
+</section>
+    </section>
+
+<div class="food-categories">
+
+    <button class="category-btn active">🍔 برغر</button>
+
+    <button class="category-btn">🍕 بيتزا</button>
+
+    <button class="category-btn">🍟 وجبات جانبية</button>
+
+    <button class="category-btn">🥤 مشروبات</button>
+
+    <button class="category-btn">🍰 حلويات</button>
+
+</div>
+    <!-- Menu Section -->
+    <section id="menu">
+
+  
+
+    <h2>قائمة الطعام</h2>
+
+    <p>اختار وجبتك المفضلة</p>
+
+ ```html
+<div class="menu-container">
+
+    <!-- Classic Burger -->
+    <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="Classic Burger">
+
+        <h3>Classic Burger</h3>
+
+        <p>برغر لحم طازج مع الجبن والخس والطماطم</p>
+
+        <div class="quantity-control">
+            <button type="button" class="quantity-minus">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-plus">+</button>
+        </div>
+
+        <span>7,000 IQD</span>
+
+        <button class="add-to-cart" data-name="Classic Burger" data-price="7000">
+            أضف للسلة 🛒
+        </button>
+
+    </div>
+
+
+    <!-- Double Burger -->
+    <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Double Burger">
+
+        <h3>Double Burger</h3>
+
+        <p>قطعتان من اللحم مع الجبن وصوص خاص</p>
+
+        <div class="quantity-control">
+            <button type="button" class="quantity-minus">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-plus">+</button>
+        </div>
+
+        <span>10,000 IQD</span>
+
+        <button class="add-to-cart" data-name="Double Burger" data-price="10000">
+            أضف للسلة 🛒
+        </button>
+
+    </div>
+
+
+    <!-- Cheese Burger -->
+    <div class="menu-card">
+
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600" alt="Cheese Burger">
+
+        <h3>Cheese Burger</h3>
+
+        <p>برغر بالجبن الذائب وصوص البرغر المميز</p>
+
+        <div class="quantity-control">
+            <button type="button" class="quantity-minus">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-plus">+</button>
+        </div>
+
+        <span>8,000 IQD</span>
+
+        <button class="add-to-cart" data-name="Cheese Burger" data-price="8000">
+            أضف للسلة 🛒
+        </button>
+
+    </div>
+
+
+    <!-- Margherita Pizza -->
+    <div class="menu-card pizza-card">
+
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600" alt="Margherita Pizza">
+
+        <h3>Margherita Pizza</h3>
+
+        <p>بيتزا بالجبن والطماطم والريحان</p>
+
+        <div class="pizza-size">
+            <button type="button" class="size-btn active">صغير</button>
+            <button type="button" class="size-btn">وسط</button>
+            <button type="button" class="size-btn">كبير</button>
+        </div>
+
+        <div class="quantity-control">
+            <button type="button" class="quantity-minus">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-plus">+</button>
+        </div>
+
+        <span class="pizza-price">8,000 IQD</span>
+
+        <button class="add-to-cart" data-name="Margherita Pizza" data-price="8000">
+            أضف للسلة 🛒
+        </button>
+
+    </div>
+
+
+    <!-- Pepperoni Pizza -->
+    <div class="menu-card pizza-card">
+
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Pepperoni Pizza">
+
+        <h3>Pepperoni Pizza</h3>
+
+        <p>بيتزا بيبروني مع الجبن وصوص البيتزا</p>
+
+        <div class="pizza-size">
+            <button type="button" class="size-btn active">صغير</button>
+            <button type="button" class="size-btn">وسط</button>
+            <button type="button" class="size-btn">كبير</button>
+        </div>
+
+        <div class="quantity-control">
+            <button type="button" class="quantity-minus">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-plus">+</button>
+        </div>
+
+        <span class="pizza-price">10,000 IQD</span>
+
+        <button class="add-to-cart" data-name="Pepperoni Pizza" data-price="10000">
+            أضف للسلة 🛒
+        </button>
+
+    </div>
+
+
+    <!-- Chicken Pizza -->
+    <div class="menu-card pizza-card">
+
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=600" alt="Chicken Pizza">
+
+        <h3>Chicken Pizza</h3>
+
+        <p>بيتزا بالدجاج والجبن وصوص خاص</p>
+
+        <div class="pizza-size">
+            <button type="button" class="size-btn active">صغير</button>
+            <button type="button" class="size-btn">وسط</button>
+            <button type="button" class="size-btn">كبير</button>
+        </div>
+
+        <div class="quantity-control">
+            <button type="button" class="quantity-minus">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-plus">+</button>
+        </div>
+
+        <span class="pizza-price">11,000 IQD</span>
+
+        <button class="add-to-cart" data-name="Chicken Pizza" data-price="11000">
+            أضف للسلة 🛒
+        </button>
+
+    </div>
+
+
+    <!-- Vegetable Pizza -->
+    <div class="menu-card pizza-card">
+
+        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=600" alt="Vegetable Pizza">
+
+        <h3>Vegetable Pizza</h3>
+
+        <p>بيتزا بالخضار الطازجة والجبن</p>
+
+        <div class="pizza-size">
+            <button type="button" class="size-btn active">صغير</button>
+            <button type="button" class="size-btn">وسط</button>
+            <button type="button" class="size-btn">كبير</button>
+        </div>
+
+        <div class="quantity-control">
+            <button type="button" class="quantity-minus">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" class="quantity-plus">+</button>
+        </div>
+
+        <span class="pizza-price">8,000 IQD</span>
+
+        <button class="add-to-cart" data-name="Vegetable Pizza" data-price="8000">
+            أضف للسلة 🛒
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+```
+
+<!-- Cart Section -->
+<section id="cart">
+
+    <h2>🛒 سلة الطلب</h2>
+
+    <div id="cart-items">
+        <p>السلة فارغة</p>
+    </div>
+<button id="clear-cart">
+    🗑️ مسح السلة
+</button>
+    <div class="cart-total">
+        المجموع:
+        <span id="cart-total">0 IQD</span>
+    </div>
+
+</section>
+<!-- Customer Information -->
+<section id="customer-info">
+
+    <h2>بيانات الطلب</h2>
+
+    <div class="customer-form">
+
+        <input
+            type="text"
+            id="customer-name"
+            placeholder="اسمك"
+        >
+
+        <input
+            type="tel"
+            id="customer-phone"
+            placeholder="رقم الهاتف"
+        >
+
+        <input
+            type="text"
+            id="customer-address"
+            placeholder="العنوان / المنطقة"
+        ><textarea id="order-notes" placeholder="ملاحظات على الطلب (اختياري)"></textarea>
+
+        <button id="send-order">
+            إرسال الطلب عبر واتساب 📱
+        </button>
+
+    </div>
+
+</section>
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>تواصل معنا</h2>
+
+        <p>📍 بغداد - العراق</p>
+
+    </section>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("burgerCart")) || [];
+
+const buttons = document.querySelectorAll(".add-to-cart");
+const cartCount = document.getElementById("cart-count");
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+const sizePrices = {
+    "Margherita Pizza": {
+        "صغير": 8000,
+        "وسط": 10000,
+        "كبير": 12000
+    },
+
+    "Pepperoni Pizza": {
+        "صغير": 10000,
+        "وسط": 12000,
+        "كبير": 14000
+    },
+
+    "Chicken Pizza": {
+        "صغير": 11000,
+        "وسط": 13000,
+        "كبير": 15000
+    },
+
+    "Vegetable Pizza": {
+        "صغير": 8000,
+        "وسط": 10000,
+        "كبير": 12000
+    }
+};
+
+
+document.querySelectorAll(".pizza-card").forEach(function(card) {
+
+    const name = card.querySelector("h3").textContent;
+
+    const sizeButtons = card.querySelectorAll(".size-btn");
+
+    const priceElement = card.querySelector(".pizza-price");
+
+    const cartButton = card.querySelector(".add-to-cart");
+
+
+    sizeButtons.forEach(function(sizeButton) {
+
+        sizeButton.addEventListener("click", function() {
+
+            sizeButtons.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+            sizeButton.classList.add("active");
+
+
+            const selectedSize = sizeButton.textContent;
+
+            const newPrice = sizePrices[name][selectedSize];
+
+
+            priceElement.textContent =
+                newPrice.toLocaleString() + " IQD";
+
+
+            cartButton.setAttribute("data-price", newPrice);
+
+        });
+
+    });
+
+});
+buttons.forEach(function(button) {
+
+    const card = button.closest(".menu-card");
+
+    const quantityMinus = card.querySelector(".quantity-minus");
+    const quantityPlus = card.querySelector(".quantity-plus");
+    const quantityValue = card.querySelector(".quantity-value");
+
+    let selectedQuantity = 1;
+
+    quantityPlus.addEventListener("click", function() {
+
+        selectedQuantity++;
+
+        quantityValue.textContent = selectedQuantity;
+
+    });
+
+    quantityMinus.addEventListener("click", function() {
+
+        if (selectedQuantity > 1) {
+
+            selectedQuantity--;
+
+            quantityValue.textContent = selectedQuantity;
+
+        }
+
+    });
+
+    button.addEventListener("click", function() {
+
+        const name = button.getAttribute("data-name");
+
+        const price = Number(button.getAttribute("data-price"));
+
+        const existingItem = cart.find(function(item) {
+            return item.name === name;
+        });
+
+        if (existingItem) {
+
+            existingItem.quantity += selectedQuantity;
+
+        } else {
+
+            cart.push({
+                name: name,
+                price: price,
+                quantity: selectedQuantity
+            });
+
+        }
+
+        selectedQuantity = 1;
+
+        quantityValue.textContent = 1;
+
+        updateCart();
+
+    });
+
+});
+
+function updateCart() {
+
+    cartItems.innerHTML = "";
+
+    let total = 0;
+    let count = 0;
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML = "<p>السلة فارغة</p>";
+
+    }
+
+    cart.forEach(function(item, index) {
+
+        total += item.price * item.quantity;
+
+        count += item.quantity;
+
+        const itemElement = document.createElement("div");
+
+        itemElement.className = "cart-item";
+
+        itemElement.innerHTML = `
+
+            <div>
+
+                <h3>${item.name}</h3>
+
+                <p>
+                    ${item.price.toLocaleString()} IQD × ${item.quantity}
+                </p>
+
+            </div>
+
+            <div>
+
+                <button onclick="changeQuantity(${index}, -1)">
+                    −
+                </button>
+
+                <span>
+                    ${item.quantity}
+                </span>
+
+                <button onclick="changeQuantity(${index}, 1)">
+                    +
+                </button>
+
+                <button onclick="removeItem(${index})">
+                    🗑️
+                </button>
+
+            </div>
+
+        `;
+
+        cartItems.appendChild(itemElement);
+
+    });
+
+    cartCount.textContent = count;
+
+    cartTotal.textContent = total.toLocaleString() + " IQD";
+
+    localStorage.setItem("burgerCart", JSON.stringify(cart));
+
+}
+
+
+function changeQuantity(index, amount) {
+
+    cart[index].quantity += amount;
+
+    if (cart[index].quantity <= 0) {
+
+        cart.splice(index, 1);
+
+    }
+
+    updateCart();
+
+}
+
+
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+}
+
+
+updateCart();
+
+
+document.getElementById("send-order").addEventListener("click", function() {
+
+    if (cart.length === 0) {
+
+        alert("السلة فارغة، أضف وجبة أولاً 🛒");
+
+        return;
+
+    }
+
+    const name = document.getElementById("customer-name").value.trim();
+
+    const phone = document.getElementById("customer-phone").value.trim();
+
+    const address = document.getElementById("customer-address").value.trim();
+
+    const notes = document.getElementById("order-notes").value.trim();
+
+    if (name === "" || phone === "" || address === "") {
+
+        alert("يرجى ملء جميع بيانات الطلب");
+
+        return;
+
+    }
+
+    let message = "🍔 طلب جديد من Burger House\n\n";
+
+    let total = 0;
+
+    cart.forEach(function(item) {
+
+        const itemTotal = item.price * item.quantity;
+
+        total += itemTotal;
+
+        message +=
+            "• " +
+            item.name +
+            " × " +
+            item.quantity +
+            " = " +
+            itemTotal.toLocaleString() +
+            " IQD\n";
+
+    });
+
+    message += "\n💰 المجموع: " + total.toLocaleString() + " IQD\n";
+
+    message += "\n👤 الاسم: " + name;
+
+    message += "\n📞 الهاتف: " + phone;
+
+    message += "\n📍 العنوان: " + address;
+
+    if (notes !== "") {
+
+        message += "\n📝 ملاحظات: " + notes;
+
+    }
+
+    const restaurantNumber = "9647763656833";
+
+    const whatsappURL =
+        "https://wa.me/" +
+        restaurantNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+
+document.getElementById("clear-cart").addEventListener("click", function() {
+
+    if (cart.length === 0) {
+
+        alert("السلة فارغة أصلاً 🛒");
+
+        return;
+
+    }
+
+    const confirmClear = confirm("هل تريد مسح جميع المنتجات من السلة؟");
+
+    if (confirmClear) {
+
+        cart = [];
+
+        localStorage.removeItem("burgerCart");
+
+        updateCart();
+
+    }
+
+});
+
+</script>
